@@ -1,12 +1,20 @@
+import Link from "next/link";
+import styles from "../styles/Navbar.module.css"
 const Navbar = () => {
     return (
-        <div>
-            <p>Hello, Kevin Ly</p>
-            <p>Hello, Kevin Ly</p>
-            <p>Hello, Kevin Ly</p>
-            <p>Hello, Kevin Ly</p>
-            <p>Hello, Kevin Ly</p>
-        </div>
+        <>
+            <div className={ styles.container }>
+                <h1>
+                    <Link href="/">Diablo 4 Build Planner</Link>
+                </h1>
+                <ul className={ styles.ulContainer }>
+                    <li>
+                        <Link href="/ItemPage">Items</Link>
+                    </li>
+                </ul>
+                
+            </div>
+        </>
     );
 }
 

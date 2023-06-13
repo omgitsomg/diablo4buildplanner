@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    background-color: gray;
+    
+}
+
+.ulContainer {
+    list-style-type: none;
+    margin-left: auto;
+}
